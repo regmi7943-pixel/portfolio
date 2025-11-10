@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5173",
+  "executionArgs": {
+    "projectName": "kiran-regmi-portfolio",
+    "projectPath": "C:\\Users\\UCAS\\Desktop\\portfolio",
+    "testIds": [],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-2iAlwupgci0HgUZg9DngKLP--TtPjkXvC7KG7lsYghhlbyRySkJc1EEQ1uNF1lbm8_saEUgNn4DHQFcmkDk1GkUixY0uicm2KI785DFciqMy7MoMIGKbJCNS8a-3YBthNgw"
+    }
+  },
+  "proxy": "http://a38b80e9-df46-4acf-90fb-7d24fba674fd:pMXcyz7vQmqtl2u7nIV8WcjTXF0SDpJi@tun.testsprite.com:8080"
+}

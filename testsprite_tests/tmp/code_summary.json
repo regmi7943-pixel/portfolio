@@ -1,0 +1,138 @@
+{
+  "tech_stack": [
+    "JavaScript",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Firebase"
+  ],
+  "features": [
+    {
+      "name": "Portfolio Website",
+      "description": "Main portfolio website with multiple sections including Hero, About, Skills, Projects, Resume, and Contact",
+      "files": [
+        "src/App.jsx",
+        "src/main.jsx",
+        "index.html"
+      ]
+    },
+    {
+      "name": "Mobile Emulator",
+      "description": "Interactive mobile phone emulator with multiple apps including Camera, Photos, Play Store, Settings, Clock, and more",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Camera App",
+      "description": "Full-featured camera application with photo capture, video recording, flash control, zoom, timer, grid overlay, and gallery integration",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Photos App",
+      "description": "Photo gallery application that displays photos captured by camera app, with date grouping, search, albums, and full-screen viewing",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Play Store App",
+      "description": "Google Play Store interface with app listings, search, categories, app details, and install functionality",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Settings App",
+      "description": "Android Settings interface with connections, device settings, personal settings, system settings, and sub-menus",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Clock App",
+      "description": "Clock application with alarms, world clock, timer, and stopwatch functionality",
+      "files": [
+        "src/sections/MobileEmulator.jsx"
+      ]
+    },
+    {
+      "name": "Navigation",
+      "description": "Navigation bar with theme toggle, smooth scrolling, and responsive design",
+      "files": [
+        "src/components/Navbar.jsx",
+        "src/hooks/useTheme.js"
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "description": "Landing section with introduction, call-to-action buttons, and animated elements",
+      "files": [
+        "src/sections/Hero.jsx"
+      ]
+    },
+    {
+      "name": "About Section",
+      "description": "About section displaying personal information and background",
+      "files": [
+        "src/sections/About.jsx"
+      ]
+    },
+    {
+      "name": "Skills Section",
+      "description": "Skills section showcasing technical skills and expertise",
+      "files": [
+        "src/sections/Skills.jsx"
+      ]
+    },
+    {
+      "name": "Projects Section",
+      "description": "Projects section displaying project cards and mobile emulator",
+      "files": [
+        "src/sections/Projects.jsx",
+        "src/components/ProjectCard.jsx",
+        "src/data/projects.js"
+      ]
+    },
+    {
+      "name": "Resume Section",
+      "description": "Resume section with downloadable CV",
+      "files": [
+        "src/sections/Resume.jsx"
+      ]
+    },
+    {
+      "name": "Contact Section",
+      "description": "Contact section with contact form or information",
+      "files": [
+        "src/sections/Contact.jsx"
+      ]
+    },
+    {
+      "name": "Footer",
+      "description": "Footer section with additional links and information",
+      "files": [
+        "src/sections/Footer.jsx"
+      ]
+    },
+    {
+      "name": "Theme Toggle",
+      "description": "Dark/light theme toggle functionality using localStorage",
+      "files": [
+        "src/hooks/useTheme.js"
+      ]
+    },
+    {
+      "name": "Firebase Integration",
+      "description": "Firebase configuration and setup",
+      "files": [
+        "src/firebase.js"
+      ]
+    }
+  ]
+}
+
+
