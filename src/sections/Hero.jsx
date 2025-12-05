@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="pt-16 md:pt-24 grid md:grid-cols-2 gap-10 items-center">
       <div className="space-y-6">
         <h1 className="h1">Hi, I'm Kiran Regmi</h1>
-        <p className="p">I build performant, delightful apps with React, React Native, Firebase, MySQL, and Node.js.</p>
+        <p className="p">Computer Information System student skilled in web and mobile development. Passionate about building innovative projects and solving real-world problems with React Native, Node.js, Firebase, and MySQL.</p>
         <div className="flex gap-3">
           <a href="#projects" className="btn btn-primary">View Projects</a>
           <a href="#contact" className="btn btn-secondary">Contact Me</a>

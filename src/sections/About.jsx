@@ -16,9 +16,15 @@ export default function About() {
       <div className="space-y-4">
         <h2 className="h2">About Me</h2>
         <p className="p">
-          I'm a front-end and cross‑platform developer focused on building fast, accessible, and well-crafted products.
-          I enjoy clean architectures, smooth animations, and solving real user problems.
+          I'm a Computer Information System student at Boston International College (2022-Present), focused on building fast, accessible, and well-crafted web and mobile applications.
+          I enjoy creating innovative solutions that solve real-world problems, from e-commerce platforms to vehicle rental apps.
         </p>
+        <div className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+          <p><strong>Education:</strong> Bachelor in Computer Information System, Boston International College</p>
+          <p><strong>Previous:</strong> +2 Management (GPA: B+), Madi Multiple Campus, NEB</p>
+          <p><strong>DOB:</strong> August 18, 2005</p>
+          <p><strong>Nationality:</strong> Nepali</p>
+        </div>
       </div>
     </div>
   )

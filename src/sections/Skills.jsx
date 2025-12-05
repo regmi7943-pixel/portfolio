@@ -1,13 +1,17 @@
 import React from 'react'
-import { SiReact, SiFirebase, SiMysql, SiNodedotjs } from 'react-icons/si'
+import { SiReact, SiFirebase, SiMysql, SiNodedotjs, SiHtml5, SiCss3, SiBootstrap, SiJavascript, SiPhp } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
 const skills = [
-  { name: 'React', icon: <SiReact className="text-sky-500" /> },
-  { name: 'React Native', icon: <SiReact className="text-sky-500" /> },
-  { name: 'Firebase', icon: <SiFirebase className="text-amber-500" /> },
-  { name: 'MySQL', icon: <SiMysql className="text-blue-600" /> },
+  { name: 'HTML', icon: <SiHtml5 className="text-orange-600" /> },
+  { name: 'CSS', icon: <SiCss3 className="text-blue-500" /> },
+  { name: 'Bootstrap', icon: <SiBootstrap className="text-purple-600" /> },
+  { name: 'JavaScript', icon: <SiJavascript className="text-yellow-500" /> },
+  { name: 'PHP', icon: <SiPhp className="text-indigo-500" /> },
   { name: 'Node.js', icon: <SiNodedotjs className="text-green-600" /> },
+  { name: 'React Native', icon: <SiReact className="text-sky-500" /> },
+  { name: 'MySQL', icon: <SiMysql className="text-blue-600" /> },
+  { name: 'Firebase', icon: <SiFirebase className="text-amber-500" /> },
 ]
 
 export default function Skills() {
