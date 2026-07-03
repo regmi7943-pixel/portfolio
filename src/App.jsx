@@ -14,7 +14,7 @@ import Footer from './sections/Footer'
 
 export default function App() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden w-full bg-slate-50 dark:bg-[#080B10]">
       {/* Top scroll progress bar */}
       <ScrollProgress />
       <Navbar />

@@ -69,7 +69,7 @@ export default function Navbar() {
           <button
             aria-label="Toggle theme"
             onClick={toggle}
-            className="btn btn-secondary p-2 h-9 w-9 justify-center rounded-lg text-base"
+            className="flex items-center justify-center h-9 w-9 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-colors text-base"
           >
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
@@ -77,7 +77,7 @@ export default function Navbar() {
           <button
             aria-label="Toggle menu"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="btn btn-secondary p-2 h-9 w-9 justify-center rounded-lg text-xl"
+            className="flex items-center justify-center h-9 w-9 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-colors text-xl"
           >
             {mobileMenuOpen ? <HiX /> : <HiMenu />}
           </button>
