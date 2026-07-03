@@ -1,24 +1,32 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import ScrollProgress from './components/motion/ScrollProgress'
+import Section from './components/motion/Section'
 import Hero from './sections/Hero'
 import About from './sections/About'
-import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-import Resume from './sections/Resume'
+import Skills from './sections/Skills'
+import Pricing from './sections/Pricing'
+import Process from './sections/Resume'
+import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
 export default function App() {
   return (
-    <div>
+    <div className="relative min-h-screen">
+      {/* Top scroll progress bar */}
+      <ScrollProgress />
       <Navbar />
-      <main className="container space-y-24 md:space-y-32">
+      <main className="container space-y-28 md:space-y-40 pt-10 md:pt-16">
         <section id="hero"><Hero /></section>
-        <section id="about"><About /></section>
-        <section id="skills"><Skills /></section>
-        <section id="projects"><Projects /></section>
-        <section id="resume"><Resume /></section>
-        <section id="contact"><Contact /></section>
+        <About />
+        <Projects />
+        <Skills />
+        <Pricing />
+        <Process />
+        <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </div>
