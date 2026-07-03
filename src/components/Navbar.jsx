@@ -84,41 +84,71 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Panel */}
+      {/* Mobile Full-Screen Menu Panel */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden glass-panel border-b absolute top-full left-0 w-full overflow-hidden"
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.96 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="md:hidden fixed inset-0 h-screen w-screen bg-slate-50 dark:bg-[#080B10] z-[999] flex flex-col p-6 overflow-y-auto"
           >
+            {/* Header row inside menu */}
+            <div className="flex items-center justify-between pb-6 border-b border-slate-200/50 dark:border-slate-800/60">
+              <a href="#hero" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
+                <img
+                  src="/profile.png"
+                  alt="Kiran Regmi"
+                  className="h-9 w-9 rounded-full object-cover border border-slate-200 dark:border-slate-800"
+                />
+                <div className="flex flex-col">
+                  <span className="font-bold tracking-tight text-sm text-slate-800 dark:text-white leading-none">Kiran Regmi</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-wider mt-0.5 uppercase">Web Developer</span>
+                </div>
+              </a>
+
+              {/* Close Button */}
+              <button
+                aria-label="Close menu"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center h-9 w-9 rounded-lg bg-slate-200/60 dark:bg-slate-800/80 text-slate-800 dark:text-slate-200 border border-slate-300/40 dark:border-slate-700/50 transition-colors text-xl"
+              >
+                <HiX />
+              </button>
+            </div>
+
+            {/* Menu Links */}
             <motion.div
-              className="px-6 py-4 flex flex-col gap-1"
+              className="flex-1 flex flex-col justify-center gap-2 py-8"
               initial="hidden"
               animate="visible"
-              variants={{ visible: { transition: { staggerChildren: 0.05, delayChildren: 0.1 } } }}
+              variants={{ visible: { transition: { staggerChildren: 0.04 } } }}
             >
               {links.map((l) => (
                 <motion.a
                   key={l.href}
                   href={l.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  variants={{ hidden: { opacity: 0, x: -10 }, visible: { opacity: 1, x: 0 } }}
-                  className="text-sm font-semibold uppercase tracking-wider py-2.5 text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
+                  variants={{ hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                  className="text-2xl font-extrabold uppercase tracking-widest text-slate-800 dark:text-slate-200 hover:text-indigo-650 dark:hover:text-indigo-400 py-3 transition-colors border-b border-slate-200/40 dark:border-slate-800/40"
                 >
                   {l.label}
                 </motion.a>
               ))}
+            </motion.div>
+
+            {/* Start Project CTA at bottom */}
+            <div className="pb-8">
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="btn btn-primary w-full py-3 mt-3 text-xs rounded-lg uppercase tracking-wider font-bold"
+                className="btn btn-primary w-full py-4 text-xs rounded-xl uppercase tracking-wider font-bold text-center block"
               >
                 Start a Project
               </a>
-            </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
